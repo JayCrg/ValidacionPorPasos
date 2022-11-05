@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Validador de nombre</title>
+        <script src="code.js"></script>
+        <style>
+            body {
+                background-color: #ed63a1;
+                font-family: sans-serif;
+            }
+            form {
+                margin-top: 10%;
+                font-family: sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            input {
+                font-size: 1.5em;
+                padding: 0.5em;
+                border: 1px solid #ed63a1;
+                border-radius: 0.5em;
+                background-color: #ed63a1;
+                color: whitesmoke;
+                text-align: center;
+            }
+            input::placeholder {
+                color: whitesmoke;
+                text-align: center;
+                opacity: 0.5;
+                font-size: larger;
+            }
+            input:focus {
+                outline: none;
+            }
+            input:hover {
+                background-color: #f5a3d1;
+            }
+
+            div{
+                text-align:center;
+            }
+
+           ul {
+                text-align: left;
+                display:inline-block; 
+                }
+            li
+            {          
+                margin-top: 1.1rem;
+                color: #f5a3d1;
+            }
+            input[type="submit"] {
+                background-color: #f5a3e3;
+                color: #ed63a1;
+                border: 1px solid #f5a3d1;
+                border-radius: 0.5em;
+                font-size: 1.5em;
+                padding: 0.5em;
+                margin-top: 1.5em;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <input type="text" name="username" id="username" placeholder="username">
+        <div>
+            <ul>
+            <li id="lower">1 lowercase character</li>
+            <li id="upper">1 uppercase character</li>
+            <li id="minimum">6 minimum characters</li>
+        </ul>
+        </div>
+        <input type="submit" name="Enviar" id="enviar">
+        </form>
+    </body>
+</html>
