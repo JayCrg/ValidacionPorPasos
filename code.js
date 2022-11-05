@@ -20,7 +20,7 @@ window.onload = () => {
         document.getElementById('lower').style.textDecoration="none";
         if(!RegExp(/^.*[A-Z]{1,}.*$/).test(username.value)){
             document.getElementById('upper').style.textDecoration="line-through";
-            mayusculas = false;
+            mayuscula = false;
         }
         else
         document.getElementById('upper').style.textDecoration="none";
@@ -29,9 +29,10 @@ window.onload = () => {
             enviar.removeAttribute('disabled');
             enviar.style.backgroundColor = "#620f34";
         }
-        else
-        enviar.setAttribute('disabled','');
-        enviar.style.backgroundColor = "#f5a3d1";
+        else{
+            enviar.style.backgroundColor = "#f5a3d1";
+            enviar.setAttribute('disabled','');
+        }
 
 
 
