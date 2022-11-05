@@ -31,6 +31,8 @@ window.onload = () => {
         }
         else
         enviar.setAttribute('disabled','');
+        enviar.style.backgroundColor = "#f5a3d1";
+
 
 
     });
